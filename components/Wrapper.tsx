@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, View, ImageBackground } from "react-native";
 import backgroundImage from "../assets/oak.jpg";
-import Header from "./Header/Header";
-import Content from "./Beers";
+import Header from "./Header";
+import Beers from "./Beers";
 import Footer from "./Footer";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
           <Header />
         </View>
         <View style={{ flex: 14 }}>
-          <Content />
+          <Beers />
         </View>
         <View style={styles.footer}>
           <Footer />

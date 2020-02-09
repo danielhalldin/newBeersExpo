@@ -1,9 +1,8 @@
 import React from "react";
-import { Image, StyleSheet, View, Text } from "react-native";
-import styled from "styled-components";
+import { View, Text } from "react-native";
 import { useQuery } from "@apollo/react-hooks";
-import { untappdUserBeers } from "../lib/queries";
-import untappdLogo from "../assets/pbu_80_yellow.png";
+import { untappdUserBeers } from "../../lib/queries";
+import { Card, Beer, Label, Wrapper } from "./styles";
 
 export default function App() {
   const { loading, error, data } = useQuery(untappdUserBeers);
@@ -59,29 +58,3 @@ export default function App() {
     </Wrapper>
   );
 }
-
-const Card = styled.View`
-  width: 40%;
-  margin-top: 20px;
-  height: 35%;
-  background-color: #333;
-  border-radius: 10px;
-  padding: 5px;
-`;
-
-const Beer = styled.View`
-  flex: 7;
-  flex-direction: column;
-`;
-
-const Label = styled.Image`
-  width: 75px;
-  height: 75px;
-`;
-
-const Wrapper = styled.View`
-  flex: 1;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-`;
