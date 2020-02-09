@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, View, ImageBackground } from "react-native";
 import backgroundImage from "../assets/oak.jpg";
-import Header from "./Header";
-import Content from "./Content";
+import Header from "./Header/Header";
+import Content from "./Beers";
 import Footer from "./Footer";
 
 export default function App() {
