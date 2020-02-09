@@ -16,7 +16,7 @@ export default function App() {
         <View style={styles.header}>
           <Header />
         </View>
-        <View style={{ flex: 14 }}>
+        <View style={{ flex: 8 }}>
           <Beers />
         </View>
         <View style={styles.footer}>
@@ -29,14 +29,14 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 10
   },
   header: {
-    flex: 2,
+    flex: 1,
     backgroundColor: "#333"
   },
   footer: {
-    flex: 1,
+    flex: 0.7,
     backgroundColor: "#333"
   }
 });

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ApolloProvider } from "react-apollo";
 import graphqlClient from "./lib/graphqlClient";
-import Wrapper from "./components/Wrapper";
+import Layout from "./components/Layout";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 
@@ -29,7 +29,7 @@ export default function App() {
   }
   return (
     <ApolloProvider client={graphqlClient}>
-      <Wrapper />
+      <Layout />
     </ApolloProvider>
   );
 }

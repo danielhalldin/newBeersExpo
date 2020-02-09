@@ -52,7 +52,10 @@ export default function App() {
         <Logo>NEW BEERS</Logo>
       </Center>
       <Right>
-        <Beers>🍺 {totalBeers}</Beers>
+        <Beers>
+          {totalBeers}{" "}
+          <Text style={{ fontSize: 35, textAlignVertical: "center" }}>🍺</Text>
+        </Beers>
       </Right>
     </Container>
   );

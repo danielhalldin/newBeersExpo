@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.View`
-  flex: 1;
+  flex: 3;
   flex-direction: row;
   margin-top: 35px;
 `;
@@ -28,12 +28,12 @@ export const User = styled.View`
 
 export const AvatarContainer = styled.View`
   justify-content: center;
-  margin-left: 5px;
+  margin-left: 10px;
 `;
 
 export const Avatar = styled.Image`
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 25px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `;
