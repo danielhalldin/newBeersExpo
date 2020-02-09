@@ -1,14 +1,15 @@
 import { ApolloClient } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { HttpLink } from "apollo-link-http";
+import getEnvVars from "../environment";
+const { untappedAccessToken } = getEnvVars();
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: new HttpLink({
     uri: "https://core-data-source.herokuapp.com/graphql",
     headers: {
-      "x-untappd-access-token":
-        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IjQxQjQ0OUQ0QTcwNkMxMTNCODlDRjMyMTYyNjY0RDM5QTMxNUMxQTYi.foRUzO_UqpmeQ24G6gxlosXQTbkoPF_naD06SUl3MGQ"
+      "x-untappd-access-token": untappedAccessToken
     }
   })
 });
